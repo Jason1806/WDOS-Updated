@@ -1,0 +1,641 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Your+Font+Family:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Body styles */
+body {
+    font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #ccc;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+.banner{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(255,255,255,0.75)) ,url('/Background.jpg'); 
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.logo {
+    width: 350px;
+    cursor: pointer;
+    margin:2%;
+    opacity: 0.7;
+    
+}
+
+nav {
+    width: 85%;
+    margin: auto;
+    padding: 10px 0; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    font-size: large;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px; 
+    position: relative;
+}
+
+nav ul li a {
+    color: #ff6347;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+nav ul li a:hover{
+    background-image: linear-gradient(to right,#F79F79, #F7D08A, #E3F09B, #87B6A7, #5B5941);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-color: #FFD700;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.dropdownmenu {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    z-index: 1;
+    opacity: 0; 
+    transition: 0.7s ease-in-out; 
+}
+
+.dropdown:hover .dropdownmenu {
+    display: block;
+    opacity: 1;
+    
+}
+
+/*HomePage styling list*/
+
+
+
+.menu {
+    display: none; /* Hide menu by default on larger screens */
+}
+
+.menu .bar {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+
+
+
+/* Main content styles */
+/* Style sections with a background color and padding */
+/* Style room and amenity sections with images */
+#home ,.room, .amenity {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #f9f9f9; /* Add a light background color */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
+#home h1{
+    color:orange
+}
+
+#home img ,.room img, .amenity img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow effect */
+    opacity:1 ;
+}
+
+.room h3, .amenity h3 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#contact{
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #ff6347;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Apply background with opacity */
+.content-background {
+    background-color: burlywood; /* Adjust opacity as needed */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    text-align: center;
+    opacity: 0.7;
+}
+
+.content-background p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.home-list, .home-ol {
+    list-style-position: inside;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.home-list li, .home-ol li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+
+
+/* Hotel Branches Styling */
+.Hotel-Branches {
+    background-color: #cddede;
+    border-radius: 30px;
+    margin: 20px 0; /* Reduce vertical margin */
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.Hotel-Branches img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto; /* Center images horizontally with some spacing */
+}
+
+.Hotel-Branches h3 {
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Remove redundant CSS rules */
+h1 {
+    text-align: center;
+}
+
+/*Table Styling on Branches*/
+.table {
+    width: 100%;
+    margin-left: auto; /* Center the table by removing the left margin */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+th, td {
+    background-color: #000000;
+    color: rgba(217, 236, 200, 0.933);
+    padding: 15px; /* Reduce padding for better readability */
+    border: 2px solid #ddd;
+    text-align: left;
+}
+
+
+
+
+
+
+
+/* Adventure styling */
+.adventure {
+    margin-bottom:50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.adventure h2 {
+    text-align: center;
+    color: #3c91c5;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.adventure p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.adventure-info {
+    float: left;
+    width: 60%;
+    padding-right: 20px;
+}
+
+.map {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.surfing, .sailing, .scubadiving{
+    width: 900px;
+    height: 750px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+/* Base styles for the restaurant section */
+.restaurant {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.restaurant h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.restaurant img {
+    width: 40%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.restaurant-description {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #555;
+}
+.responsive {
+    padding: 10px;
+    display: flex;
+    width: 25%;
+    margin: auto;
+  }
+
+
+
+
+
+/*Booking Page */
+
+/* Customize the Android-like styles for the entire website here */
+
+
+
+
+.reservations-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Android-like card */
+.reservations-card {
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Android-like heading */
+.reservations-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Android-like input fields */
+.reservations-input {
+    margin-bottom: 20px;
+}
+
+.reservations-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+
+/* Style for the button */
+.reservations-button{
+    background-color: #2196F3; /* Blue button color */
+    color: #ffffff; /* White text */
+    border: none; /* Remove borders */
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+
+
+
+.reservations-button:hover {
+    background-color: #1976D2; /* Darker blue color on hover */
+}
+
+
+/* Android-like info boxes */
+.reservations-info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.reservations-info-box i {
+    font-size: 3em;
+    color: #2196F3; /* Blue icon color */
+}
+
+.reservations-info-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Add any additional styles for your navigation, header, footer, etc. */
+
+/* ... (Previous styles) ... */
+
+/* Center the headings */
+.reservations-heading {
+    text-align: center;
+}
+
+/* Center the labels and select elements */
+.reservations-input label,
+.reservations-input select {
+    display: block;
+    text-align: center;
+    justify-content: space-between;
+}
+
+/* Center the text input elements */
+.reservations-input input[type="text"],
+.reservations-input input[type="date"],
+.reservations-input input[type="number"] {
+    width:500px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    margin-left: 35%;
+}
+
+
+
+/* Customize the select element */
+.reservations-input select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    background: url('/arrow-down.png') no-repeat right; /* Add a custom arrow icon */
+    background-size: 24px;
+    background-position: 95%;
+}
+
+/* Customize the Adventure Options select element */
+.reservations-input select#adventure-options {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none; /* Safari and Chrome */
+    -moz-appearance: none; /* Firefox */
+    background: url('/arrow-down.png') no-repeat right; /* Add a custom arrow icon */
+    background-size: 24px;
+    background-position: 95%;
+}
+
+/* ... (Previous styles) ... */
+
+/* ... (Previous styles) ... */
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adjust the gap as needed */
+    padding: 20px; /* Add some padding to the sides */
+    margin-left: 35%;
+}
+
+/* Room Booking Form */
+.room-booking {
+    flex: 1;
+    border-radius: 12px; /* Add a smooth border radius */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin-left: 35%;
+}
+
+/* Adventure Booking Form */
+.adventure-booking {
+    flex: 1;
+    border-radius: 12px; /* Add a smooth border radius */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    margin-left: 35%;
+}
+
+/* ... (Previous styles) ... */
+
+
+
+/* ... (Previous styles) ... */
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 100px;
+    }
+
+    header {
+        padding: 60px 0;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Hamburger menu icon styling */
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 30px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: 6px 0;
+    }
+
+    .nav-container {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-container.active {
+        display: flex;
+    }
+
+    .nav-container li {
+        margin: 20px 0;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+
+    .room, .amenity {
+        padding: 10px;
+    }
+
+
+    
+
+    .Hotel-Branches {
+        flex-basis: 100%; /* Use full width on smaller screens */
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+
+
+    /*Booking page*/
+    /* Add this CSS for responsiveness */
+    .reservations-input input[type="text"],
+    .reservations-input input[type="date"],
+    .reservations-input input[type="number"] {
+        width: 100%; /* Set to 100% width on smaller screens */
+        margin-left: 0; /* Remove the left margin */
+        align-items: center;
+        border: 35px;
+        outline-color: #000000;
+    }
+    
+
+    /* Center the form elements on smaller screens */
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    /* Reset the margin for the individual forms on smaller screens */
+    .room-booking,
+    .adventure-booking {
+        margin-left: 0;
+    }
+
+
+}
+
+@media all and (max-width: 420px) {
+    .logo {
+        width: 80px;
+    }
+
+    .Hotel-Branches {
+        flex-basis: 100%; /* Use full width on smaller screens */
+        margin: 20px 0;
+        padding: 20px;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+
+}
