@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pearl Resorts - Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalise.css">
+    
+</head>
+<body>
+    <div class="banner">
+     <nav>
+        <img src="logo.png" class="logo">
+        <div class="menu">
+        <div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        
+        </div>
+        </div>
+
+
+
+        <ul class="nav-container">
+            
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="branch.html">Hotel Branches</a></li>
+            <li><a href="adventures.html">Adventures</a></li>
+            
+            <li><ul class="dropdown">
+            <li><a href="restaurants.html">Restaurants</a></li>
+                <ul class="dropdownmenu">
+                    <li><a href="Events1.html">Wedding Events</a></li>
+                    <li><a href="event2.html">Other Events</a> </li>
+                </ul>
+            </ul>
+            </li>
+
+            <li><a class="active" href="booking.html">Bookings</a></li>
+        </ul>
+     </nav>
+
+
+
+     
+
+<!-- Room Booking Form Section -->
+<section id="room-booking" class="reservations-card">
+    <h1 class="reservations-heading">Room Booking</h1>
+    <!-- Name -->
+    <div class="reservations-input">
+        <input type="text" placeholder="Name">
+    </div>
+    <!-- Email -->
+    <div class="reservations-input">
+        <input type="email" placeholder="Email">
+    </div>
+    <!-- Gender -->
+    <div class="reservations-input">
+        <label for="gender">Gender</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="non-binary">Non-binary</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+        </select>
+    </div>
+    <!-- Check-in Date -->
+    <div class="reservations-input">
+        <label for="checkin-date">Check-in Date</label>
+        <input type="date" id="checkin-date">
+    </div>
+    <!-- Check-out Date -->
+    <div class="reservations-input">
+        <label for="checkout-date">Check-out Date</label>
+        <input type="date" id="checkout-date">
+    </div>
+    <!-- Hotel Branch -->
+    <div class="reservations-input">
+        <label for="hotel-branch">Hotel Branch</label>
+        <input type="text" id="hotel-branch" placeholder="Enter hotel branch">
+    </div>
+    <!-- Adults -->
+    <div class="reservations-input">
+        <label for="adults">Adults</label>
+        <input type="number" id="adults" min="1" max="10">
+    </div>
+    <!-- Children -->
+    <div class="reservations-input">
+        <label for="children">Children</label>
+        <input type="number" id="children" min="0" max="10">
+    </div>
+    <!-- Reservations-like button -->
+    <button class="reservations-button">Book Room</button>
+</section>
+
+<!-- Adventure Booking Form Section -->
+<section id="adventure-booking" class="reservations-card">
+    <h1 class="reservations-heading">Adventure Booking</h1>
+    <!-- Name -->
+    <div class="reservations-input">
+        <input type="text" placeholder="Name">
+    </div>
+    <!-- Email -->
+    <div class="reservations-input">
+        <input type="email" placeholder="Email">
+    </div>
+    <!-- Adventure Options -->
+    <div class="reservations-input">
+        <label for="adventure-options">Adventure</label>
+        <select id="adventure-options">
+            <option value="boating">Boating</option>
+            <option value="scuba-diving">Scuba Diving</option>
+            <option value="surfing">Surfing</option>
+        </select>
+    </div>
+    <!-- Check-in Date -->
+    <div class="reservations-input">
+        <label for="checkin-date">Check-in Date</label>
+        <input type="date" id="checkin-date">
+    </div>
+
+    <div class="reservations-input">
+        <label for="checkin-time">Check-in Time</label>
+        <input type="time" id="checkin-time">
+    </div>
+    
+    <!-- Number of Adults -->
+    <div class="reservations-input">
+        <label for="adults">Adults</label>
+        <input type="number" id="adults" min="1" max="10">
+    </div>
+    <!-- Number of Children -->
+    <div class="reservations-input">
+        <label for="children">Children</label>
+        <input type="number" id="children" min="0" max="10">
+    </div>
+    <!-- Reservations-like button -->
+    <button class="reservations-button">Book Adventure</button>
+
+    <!-- Reservations-like info boxes -->
+    <div class="reservations-info-box">
+        <i class="fas fa-hotel fa-3x"></i>
+        
+        <h3 id="Reservations">Location</h3>
+        <p>Head Office- Pearl Resorts Pasikuda</p>
+    </div>
+
+    <div class="reservations-info-box">
+        <i class="fas fa-phone fa-3x"></i>
+        <h3>Telephone Number</h3>
+        <p>+94-000-0000</p>
+    </div>
+    <div class="reservations-info-box">
+        <i class="fas fa-envelope fa-3x"></i>
+        <h3>Email Address</h3>
+        <p>pearlresorts@gmail.com</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Pearl Resorts. All rights reserved.</p>
+ </footer>
+</body>
+<script src="hamburger.js"></script>
+</html>
